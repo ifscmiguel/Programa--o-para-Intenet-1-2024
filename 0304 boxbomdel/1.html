@@ -9,21 +9,35 @@
             border:1px solid black;
             background-color: #CCC;
             padding:20px;
-            margin:5px;
+            margin:50px;
             width:25%;
+            height: 100px;
+        }
+
+        .ib{
+            background-color: #F00;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
+    <!-- elementos block não ficam lado a lado -->
     <div>Isto é uma div</div>
     <div>Isto é outra div</div>    
     <div>Divs são renderizadas como box</div>
     <p>Páragrafo também é uma caixa</p>
     <h1>Títulos são box</h1>
-    <!-- inline -->
+    
+    <!-- inline - não aceitam largura, altura e margens top e bottom -->
+    <br><br>
     <strong>Strong é um elemento inline</strong>
     <strong>Strong </strong>
     <em>Emphasis</em>
     <span>Span é uma caixa genérica de textos</span>
+
+    <!-- renderizar como inline-block -->
+    <div class="ib">Isto é uma div</div>
+    <strong class="ib">Strong </strong>
+    <em class="ib">Emphasis</em>
 </body>
 </html>
