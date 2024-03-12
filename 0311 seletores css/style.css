@@ -1,0 +1,79 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #4a4e69;
+}
+
+/* menu fixo no topo da página */
+nav{
+    background-color: #22223b;
+    position: fixed;
+    top:0;
+    width:100%;
+    display: flex; /* veremos mais pra frente sobre isso*/
+}
+
+/* links que estão dentro de nav */
+nav a{
+    padding:20px;
+    display: inline-block;
+}
+
+#sobre{
+    background-color: #ffcdb2;
+}
+
+#menu{
+    background-color: #c9ada7;
+}
+
+.container{
+    max-width: 900px;
+    margin:auto; 
+}
+
+/* 
+hack do menu fixo, 
+colocamos padding-top para os títulos das seções 
+não entrarem embaixo do menu 
+*/
+header, section{
+    padding:50px 30px 30px 30px;
+    min-height: 90vh; /* viewport height (90% da área visível)*/
+}
+
+header{
+    background-color: #e5989b;
+    text-align: center;
+    padding-top:30vh;
+}
+
+table{
+    width:100%;
+}
+
+th, td{
+    padding:10px;
+    border-bottom: 1px dotted #4a4e69;
+}
+
+/* inversão de cores */
+th{
+    background-color: #4a4e69;
+    color:#c9ada7;
+}
+
+/* formatação dos links */
+nav a:link, nav a:visited{
+    text-decoration: none;
+    color:#FFF;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color:yellow;
+}
