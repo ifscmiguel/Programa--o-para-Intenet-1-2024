@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    background-color: yellowgreen;
+    height: 80vh;
+    padding:10px;
+    /* propriedades flexbox container */
+    display: flex;
+    flex-direction: row; 
+    /* alinhamento do conteudo no eixo principal*/
+    justify-content: center;
+    /* alinhamento eixo transversal*/
+    align-items: center;
+    /* distribuição (espaçamento entre filhos) no eixo principal*/
+    justify-content: space-around;
+    /* indica a quebra de linha/coluna*/
+    /*flex-wrap: wrap;*/
+    /* distribuição (espaçamento entre filhos) no eixo transversal*/
+    /*align-content: space-between;*/
+    gap: 20px;;
+
+}
+
+section{
+    background-color: violet;
+    border:5px solid black;
+    padding:30px;
+    flex-grow: 1;
+    order:1;
+}
+
+section:first-child{
+    flex-grow: 3;
+    order:2;
+}
+section:last-child{
+    order: 3;
+}
